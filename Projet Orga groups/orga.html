@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orga groups</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1>ORGA GROUPS</h1>
+        <label for="groupType">TYPE DE GROUPE :</label>
+        <select id="groupType">
+            <option value="2">DUOS</option>
+            <option value="3">TRIOS</option>
+            <option value="4">QUATUORS</option>
+        </select>
+        <br><br>
+        <table id="studentsTable">
+            <thead>
+                <tr>
+                    <th>PRÉNOM</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" placeholder="PRÉNOM DE L'ÉLÈVE"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button onclick="addRow()">AJOUTER UN ÉLÈVE</button>
+        <button onclick="createGroups()">CRÉER DES GROUPES</button>
+        <button onclick="createRandomGroups()">CRÉER DES GROUPES ALÉATOIREMENT</button>
+        <div id="result"></div>
+    </div>
+    <audio src="votre-son.mp3" autoplay loop></audio>
+    <script src="script.js"></script>
+</body>
+</html>
